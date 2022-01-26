@@ -1,0 +1,6 @@
+.wrapper {
+    border : 1px solid gray;
+    background-color: rgb(233, 233, 233);
+    padding: 10px 10px;
+    width: 60%;
+}
