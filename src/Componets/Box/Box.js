@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import TodoList from '../TodoList/TodoList.js';
 import { Container, Col, Row } from 'react-bootstrap';
+import Button from 'react-bootstrap/Button'
 import '../Box/Box.css';
 
 const Box = () => {
@@ -37,18 +38,20 @@ const Box = () => {
     }
 
     return(
-        <div>
+        <div className='bigbox'>
             <span>
                 <input type='text' placeholder='Add TO-DO' id='inputBar'/>
-                <button onClick={addTodo}>Add Todo</button>
+                <Button variant="success" size="md" onClick={addTodo}>Add To-Do</Button>
             </span>
-            <Container>  
-                <div className='wrapper'>
-                    <TodoList list={list} deleteTodo={deleteTodo}/> 
-                </div>
+            <Container className="container">
+                { list.length == 0 ? null:
+                    <div className='wrapper'>
+                        <TodoList list={list} deleteTodo={deleteTodo}/> 
+                    </div>
+                }
             </Container>
             <p>You have {list.length} pending tasks</p>
-            <button onClick={clearAll}>Clear All</button>
+            <Button variant="danger" size="md" onClick={clearAll}>Clear All</Button>
         </div>
     );
 }

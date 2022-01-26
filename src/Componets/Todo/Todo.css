@@ -1,4 +1,6 @@
 .singleTodo {
-    display : flex;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px !important;
+    margin: 5px 0px !important;
 }

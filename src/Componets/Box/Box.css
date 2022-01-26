@@ -1,6 +1,36 @@
+.bigbox {
+    background-color: beige;
+    padding: 20px 0px ;
+    width: 600px;
+    margin: 0px auto;
+}
+
 .wrapper {
-    border : 1px solid gray;
-    background-color: rgb(233, 233, 233);
+    border: 1px solid rgb(175, 173, 173);
+    background-color: rgb(223, 223, 223);
     padding: 10px 10px;
-    width: 60%;
+    width: 500px;
+    margin: 10px auto;
+}
+
+#inputBar {
+    border: 1px solid gray;
+    width: 385px;
+    margin: 0px 5px 0px 0px;
+    padding: 2px 10px;
+}
+
+.btn-success {
+    background-color: rgb(31, 197, 31) !important;
+    border: 0px !important;
+    padding: 4px 15px !important;
+}
+
+.btn-danger {
+    background-color: rgb(212, 0, 0) !important;
+}
+
+.alert-primary {
+    background-color: rgb(66, 180, 196) !important;
+    color: white !important;
 }
